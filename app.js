@@ -1,7 +1,8 @@
 const aedes = require('aedes')()
 const httpServer = require('http').createServer()
 const ws = require('websocket-stream')
-const port = process.env.PORT || 8081;
+// const port = process.env.PORT || 8081;
+const port = process.env.PORT || 443;
 
 //----------------------------
 // MQTT server over WebSocket
