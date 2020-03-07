@@ -4,11 +4,18 @@
 </head>
 
 <script> 
-    let options = {
+    /* let options = {
         host: 'localhost', 
         port: 8081, 
         protocol: 'ws'
+     };  */
+
+     let options = {
+        host: 'https://auoh20-mqtt-broker.herokuapp.com/', 
+        port: 443, 
+        protocol: 'wss'
      }; 
+
      let client = mqtt.connect(options)
 
      client.on('connect', () => {
